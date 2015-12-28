@@ -1,15 +1,71 @@
+<!-- Version 2 
+- Version 1 is only a based template to use to see my ideas
+- This is the improved version I am making for my personal website -->
+
 <!DOCTYPE html>
 <html>
 	<head>
-    	<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   		<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<meta name="Raymond Chung" content="Raymond Chung Personal Website">
-   		<title>Raymond Chung</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+		<meta name="Raymond Chung" content="Raymond Chung Personal Website">
+		<title>Raymond Chung</title>
 
-   		<link rel="stylesheet" type="css/datasheet" href="css/something.css">
-   	</head>
+		<!-- CSS -->
+		<link rel="stylesheet" type="css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="css" href="css/scrolling-nav.css">
+		<link rel="stylesheet" type="css" href="css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="css" href="css/home.css">
+	</head>
 
-   	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<!-- 1. NAVIGATION BAR -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menu-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="navbar-left">
+					<a class="navbar-brand page-scroll" href="#page-top">Rayo</a>
+				</div>
+
+				<div class="collapse navbar-collapse navbar-menu-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+						<li><a class="page-scroll" href="#about">About</a></li>
+						<li><a class="page-scroll" href="#projects">Projects</a></li>
+						<li><a class="page-scroll" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- 2. HOME SECTION -->
+		<section id="home">
+			<div class="container">
+				<div class="cols-md-12 cols-sm-6">
+					<section class="typingText text-center">
+						<h1>Hi! I am Raymond Chung</h1>
+						<h2 class="typing"><span class="type-sentence">I make websites<span>_</span></span></h2>
+					</section>
+					<div class="text-center">
+						<img src="img/home.svg">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SCRIPTS -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/scrolling-nav.js"></script>
 	</body>
 </html>
