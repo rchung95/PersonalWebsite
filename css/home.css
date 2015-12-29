@@ -1,4 +1,8 @@
 /* 1. General */
+html {
+	width: 100%;
+	height: 100%;
+}
 body {
 	background: #1ebedf;
 	width: 100%;
@@ -10,6 +14,130 @@ body {
 		background: #1ebedf linear-gradient(180deg, #1b8bbf 0, #1ebedf 100%);
 		background-repeat: no-repeat;
 	}
+}
+
+.about-section {
+    padding-top: 100px;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 80px;
+}
+
+.resume-section {
+    padding-top: 100px;
+    text-align: center;
+    background: #f1f1f1;
+    padding-bottom: 80px;
+}
+
+.projects-section {
+    padding-top: 100px;
+    text-align: center;
+    background: #1ebedf;
+    padding-bottom: 80px;
+}
+
+.contact-section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background: #fff;
+}
+
+.btn-primary {
+    border-color: #1ebedf;
+    text-transform: uppercase;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1ebedf;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #1b8bbf;
+    color: #fff;
+    background-color: #1b8bbf;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #1b8bbf;
+    background-color: #1b8bbf;
+}
+
+.btn-primary .badge {
+    color: #1ebedf;
+    background-color: #fff;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #1ebedf;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1ebedf;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #1b8bbf;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1b8bbf;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #1b8bbf;
+    background-color: #1b8bbf;
 }
 
 /* 2. Navigation */
@@ -57,6 +185,19 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar.top-nav-collapse .navbar-nav>l
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		background-color: #fff;
 	}
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
 }
 
 /* 3. Home */
@@ -107,7 +248,7 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar.top-nav-collapse .navbar-nav>l
 	color: #fff;
 }
 
-span > span {
+.typingText span > span {
 	-webkit-animation: cursor 1s infinite;
 }
 
@@ -120,8 +261,15 @@ span > span {
 }
 
 /* 4. ABOUT */
-.aboutI {
-	margin-top: 100px;
+#aboutDesc {
+	font-style: italic;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+span#aboutVision {
+	color: #1ebedf;
+	font-weight: 700;
 }
 .aboutInfo {
 	margin-top: 30px;
@@ -130,12 +278,110 @@ span > span {
 hr#aboot {
   border-top: 6px dashed #1ebedf;
   margin-top: 1.5em;
-  margin-left: 150px;
-  margin-right: 150px;
   margin-bottom: 1.5em;
 }
 
-/* 5. SOCIAL MEDIA */
+@media(min-width: 768px) {
+	.aboutI {
+		margin-top: 60px;
+	}
+
+	hr#aboot {
+	  	margin-left: 150px;
+	  	margin-right: 150px;
+	}
+}
+
+/* 5. RESUME */
+i#resume-icon {
+	padding-right: 10px;
+}
+
+/* 6. CONTACT */
+#contactSpace {
+	padding-bottom: 20px;
+}
+
+section.success {
+	color: #fff;
+	background: #18bc9c;
+}
+
+section.success a, section.success a:hover, section.success a:focus, section.success a:active, section.success a.active {
+	outline: 0;
+	color: #2c3e50;
+}
+
+.floating-label-form-group {
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #eee;
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea {
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	border: 0;
+	border-radius: 0;
+	font-size: 1.5em;
+	background: 0 0;
+	box-shadow: none !important;
+	resize: none;
+	z-index: 1;
+}
+
+.floating-label-form-group label{
+	position: relative;
+	top: 2em;
+	margin: 0;
+	font-size: 0.85em;
+	line-height: 1.764705882em;
+	vertical-align: middle;
+	vertical-align: baseline;
+	opacity: 0;
+	display: block;
+	z-index: 0;
+	-webkit-transition: top 0.3s ease, opacity 0.3s ease;
+	-moz-transition: top 0.3s ease, opacity 0.3s ease;
+	-ms-transition: top 0.3s ease, opacity 0.3s ease;
+	transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+	padding-left: 14px;
+	border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+	top: 0;
+	opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+	color: #18bc9c;
+}
+
+form .row:first-child .floating-label-form-group {
+	border-top: 1px solid #eee;
+}
+
+.btn-success {
+	background-color: #1ebedf;
+	border-color: transparent;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+	background-color: #1b8bbf;
+	border-color: transparent;
+}
+
+.text-danger, .text-danger:hover {
+	color: red;
+}
+
+/* 7. SOCIAL MEDIA */
 .social-buttons, ul.list-inline.social-buttons {
 	padding: 0;
 	margin-top: 10px;
