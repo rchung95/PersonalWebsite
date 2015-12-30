@@ -13,16 +13,24 @@ Version 2.1
 - Fixed the navbar issue, where it was not changing colour
 - Added in my profile picture
 
-Version 2.2 [current]
+Version 2.2
 - Added mail section
 - Added resume section [30% Completed]
 - Added projects section [10% Completed]
 - Added in the contact section [Completed]
 - Merge scrolling-nav.css to home.css and scrolling-nav.js to home.js
 
+Version 2.3 [current]
+- Added timeline [95% Completed]
+- Updated projects section [65% Completed]
+- Added projects images [more to add]
+- Added tooltip [Completed]
+- Added footer section [Completed]
+
 TO DO:
-- In resume section, add a vertical timeline [next update]
 - Add projects [within the next two updates]
-- Add my resume in .pdf form [next update]
+- Add my resume in .pdf form [within next two update]
 - Add media queries [after completion of website]
 - Add animations [after completion of website]
+- Fix .svg image in home section [after completion of site]
+- Fix the hover image of vertical timeline [within next two updates]
