@@ -1,3 +1,27 @@
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+/*
+// Disable the two taps on iOS devices
+$(document).ready(function() {
+  if (window.matchMedia('max-width: 900px)').matches) {
+   $('a').on('click touchend', function(e) {
+      var el = $(this);
+      var link = el.attr('href');
+      window.location = link;
+   });
+  }
+});
+*/
+
 // Tooltip
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
@@ -14,14 +38,15 @@ $(window).scroll(function() {
     }
 });
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+//Animate the resume button
+$(window).scroll(function() {
+    $('#reAnim').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("animated shake");
+      }
     });
 });
 

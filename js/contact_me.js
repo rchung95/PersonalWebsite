@@ -11,6 +11,7 @@ $(function() {
             event.preventDefault();
             
             // get values from FORM
+            var subject = $("input#subject").val();
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
@@ -24,6 +25,7 @@ $(function() {
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
+                    subject: subject,
                     name: name,
                     phone: phone,
                     email: email,

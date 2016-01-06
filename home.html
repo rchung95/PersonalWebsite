@@ -2,14 +2,15 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width-device-width, initial-scale=1">
-		<meta name="Raymond Chung" content="Raymond Chung Personal Website">
+		<!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Raymond Chung">
 		<title>Raymond Chung</title>
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/home.css">
@@ -69,7 +70,7 @@
 						<h2 class="typing"><span class="type-sentence">I make websites<span>_</span></span></h2>
 					</section>
 					<div class="text-center">
-						<img src="img/home.svg">
+						<img class="animated fadeInUp" src="img/home.svg">
 					</div>
 				</div> <!-- End column -->
 			</div> <!-- End container -->
@@ -90,7 +91,7 @@
 						<div class="col-sm-6 col-md-12-right">
 							<div class="aboutI">
 								<h3 id="aboutDesc">"A kid with a <span id="aboutVision">vision</span>"</h3>
-								<p class="text-muted">My name is Raymond Chung and I am a third year undergraduate student specializing in Computer Science and Education. I am also an entrepreneur, front-end web developer for hire and programmer. My passion lies within startups and user experience and design. Starting January 2016, I will be a Teaching Assistant at Queen's University.</p>
+								<p class="text-muted">My name is Raymond Chung and I am a third year undergraduate student specializing in Computer Science and Education. I am also an entrepreneur, front-end web developer for hire and programmer. My passion lies within startups and user experience and design. Currently, I am the Chief Techology Officer of Foody and a Teaching Assistant for the Faculty of Computing at Queen's University.</p>
 								<hr id="aboot">
 								<p class="text-muted">Connect With Raymond!</p>
 								<ul class="list-inline social-buttons">
@@ -117,7 +118,7 @@
 						<p class="text-muted">I am currently looking for a summer internship during the months of May 2016 to August 2016. The timeline below is just a summary of what I have been doing since I started university.</p>
 					</div> <!-- End row -->
 					<div class="row">
-						<a href="resume.pdf" class="btn btn-xl" target="_blank"><i id="resume-icon" class="fa fa-file-text"></i>Resume</a>
+						<a href="resume.pdf" class="btn btn-xl" id="reAnim" target="_blank"><i id="resume-icon" class="fa fa-file-text"></i>Resume</a>
 					</div> <!-- End row -->
 				</div> <!-- End column -->
 				<div class="col-md-12">
@@ -133,7 +134,7 @@
 									</div> <!-- End timeline-heading -->
 									<div id="QU" class="collapse timeline-content">
 										<hr id="timeHR">
-										<p>Specialization: Computer Science (CSCI Stream)</p>
+										<p><b>Specialization:</b> Computer Science (CSCI Stream)</p>
 										<p>Currently fulfilling my requirements for my Bachelor of Computing (Honours).</p>
 									</div> <!-- End timeline-content -->
 								</div> <!-- End timeline-panel -->
@@ -147,13 +148,40 @@
 									</div> <!-- End timeline-heading -->
 									<div id="QU1" class="collapse timeline-content">
 										<hr id="timeHR">
-										<p>Teachables: Computer Science and Mathematics (Intermediate/Senior Stream)</p>
+										<p><b>Teachables:</b> Computer Science and Mathematics (Intermediate/Senior Stream)</p>
 										<p>Currently fulfilling my requirements and Bachelor of Education.</p>
 										<p>Expected graduation date: April 2018.</p>
 									</div> <!-- End timeline-content -->
 								</div> <!-- End timeline-panel -->
 							</li>
 							<li class="litest"><h3 class="test">EXPERIENCE</h3></li>
+							<li>
+								<div data-toggle="collapse" data-target="#TA" class="timeline-icon"><a data-toggle="collapse" data-target="#TA" href="#TA"><i class="fa fa-book"></i></a></div> <!-- End timeline-icon -->
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4 class="timeline-title">Teaching Assistant</h4>
+										<p class="text-muted">Jan 2016 - Present</p>
+									</div> <!-- End timeline-heading -->
+									<div id="TA" class="collapse timeline-content">
+										<hr id="timeHR">
+										<p>I am a Teaching Assistant for the Faculty of Computing. I help students weekly during the scheduled lab hours and I assist the professor in marking the assistments. I also help students via email and office hours when needed.</p>
+									</div> <!-- End timeline-content -->
+								</div> <!-- End timeline-panel -->
+							</li>
+							<li>
+								<div data-toggle="collapse" data-target="#FOODY" class="timeline-icon alt"><a data-toggle="collapse" data-target="#FOODY" href="#FOODY"><i class="fa fa-cutlery"></i></a></div> <!-- End timeline-icon -->
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4 class="timeline-title"><a href="http://foody.co" target="_blank">Co-Founder of Foody</a></h4>
+										<p class="text-muted">Sept 2015 - Present</p>
+									</div> <!-- End timeline-heading -->
+									<div id="FOODY" class="collapse timeline-content">
+										<hr id="timeHR">
+										<a href="http://foody.co" target="_blank">Visit Foody!</a>
+										<p>I (as Chief Technology Officer), along with three others co-founded Foody, a food-based subscription service of fresh, healthy meals made by local chefs that we deliver to our customers. The meals itself can be stored frozen for consumption at a later date.</p>
+									</div> <!-- End timeline-content -->
+								</div> <!-- End timeline-panel -->
+							</li>
 							<li>
 								<div data-toggle="collapse" data-target="#WD" class="timeline-icon"><a data-toggle="collapse" data-target="#WD" href="#WD"><i class="fa fa-code"></i></a></div> <!-- End timeline-icon -->
 								<div class="timeline-panel">
@@ -164,20 +192,6 @@
 									<div id="WD" class="collapse timeline-content">
 										<hr id="timeHR">
 										<p>I am a web developer for COMPSA Web Services, where I worked in a team to develop websites for clients. The languages we use are PHP, HTML, CSS and Javascript.</p>
-									</div> <!-- End timeline-content -->
-								</div> <!-- End timeline-panel -->
-							</li>
-							<li>
-								<div data-toggle="collapse" data-target="#FOODY" class="timeline-icon alt"><a data-toggle="collapse" data-target="#FOODY" href="#FOODY"><i class="fa fa-cutlery"></i></a></div> <!-- End timeline-icon -->
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h4 class="timeline-title"><a href="http://foody.co" target="_blank">Foody</a></h4>
-										<p class="text-muted">Sept 2015- Present</p>
-									</div> <!-- End timeline-heading -->
-									<div id="FOODY" class="collapse timeline-content">
-										<hr id="timeHR">
-										<a href="http://foody.co" target="_blank">Visit Foody!</a>
-										<p>I, along with three others co-founded Foody, a food-based subscription service of fresh, healthy meals made by local chefs that we deliver to our customers. The meals itself can be stored frozen for consumption at a later date.</p>
 									</div> <!-- End timeline-content -->
 								</div> <!-- End timeline-panel -->
 							</li>
@@ -199,7 +213,7 @@
 								<div data-toggle="collapse" data-target="#SC" class="timeline-icon alt"><a data-toggle="collapse" data-target="#SC" href="#SC"><i class="fa fa-plus"></i></a></div> <!-- End timeline-icon -->
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h4 class="timeline-title">Settlers of Catan Club</h4>
+										<h4 class="timeline-title">Founder of Settlers of Catan Club</h4>
 										<p class="text-muted">Nov 2015 - Present</p>
 									</div> <!-- End timeline-heading -->
 									<div id="SC" class="collapse timeline-content">
@@ -267,6 +281,11 @@
 						<form name="sentMessage" id="contactForm" novalidate>
 							<div class="row control-group">
 								<div class="form-group col-xs-12 floating-label-form-group controls">
+									<label>Subject</label>
+									<input type="text" class="form-control" placeholder="Subject" id="subject" required data-validation-required-message="Please enter the subject of the email.">
+									<p class="help-block text-danger"></p>
+							<div class="row control-group">
+								<div class="form-group col-xs-12 floating-label-form-group controls">
 									<label>Name</label>
 									<input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
 									<p class="help-block text-danger"></p>
@@ -322,7 +341,7 @@
 								<h2>Foody</h2>
 								<hr>
 								<img src="img/portfolio/foodyportfolio.png" class="img-responsive img-centered" alt="">
-								<p>Blah blah blah</p>
+								<p>This is the website I made for Foody! It is a responsive website that is viewable on all mobile devices. The framework is bootstrap and I use HTML, CSS, jQuery to develop the website.</p>
 								<ul class="list-inline items-details">
 									<li>Client: <strong><a href="http://foody.co">Foody</a></strong></li>
 									<li>Date: September 2015</li>
@@ -351,10 +370,10 @@
 								<h2>Lunch By George</h2>
 								<hr>
 								<img src="img/portfolio/lunchbygeorge2.png" class="img-responsive img-centered" alt="">
-								<p>Blah blah blah</p>
+								<p>Lunch By George is a soup kitchen in Kingston. As they have requested a brand new look for their website. My team and I designed and developed the website from scatch during the Code The Change's CodeJam event. The website framework is foundation and we code it using PHP, HTML, Javacript.</p>
 								<ul class="list-inline items-details">
 									<li>Client: <strong><a href="http://raymondchung.ca/lunchbygeorge">Lunch By George</a></strong></li>
-									<li>Date: September 2015</li>
+									<li>Date: January 2015</li>
 									<li>Service: Web Development</li>
 								</ul>
 								<button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>

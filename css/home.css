@@ -815,6 +815,7 @@ footer span.copyright a {
 
 /* 8. SOCIAL MEDIA */
 /* Disabling tooltip on tablet and mobile */
+/*
 @media(max-width: 900px) {
 	.tooltip, .tooltip .tooltip-inner, .tooltip.top .tooltip-arrow,
 	#linkedin + .tooltip .tooltip-inner, #linkedin + .tooltip.top .tooltip-arrow,
@@ -826,6 +827,7 @@ footer span.copyright a {
 		display: none;
 	}
 }
+*/
 
 .tooltip .tooltip-inner {
 	background-color: rgba(0, 0, 0, 0.8); 
