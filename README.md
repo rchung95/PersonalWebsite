@@ -38,7 +38,7 @@ Changelog 2.4
 - Added logo and favicon and apple touch icons
 - Project Section [Completed]
 
-Changelog 2.5 [current]
+Changelog 2.5
 - Renamed Version to Changelog to better reflect each edits I do
 - Added animations to the home.svg and resume button
 - Updated foody.svg
@@ -47,3 +47,7 @@ Changelog 2.5 [current]
 - Added a subject line
 - Added more the resume section
 - Add my resume in .pdf form
+
+Changeling 2.6 [current]
+- Added in another project
+- Updated my resume
