@@ -206,14 +206,15 @@ a:hover.navbar-brand.page-scroll {
 }
 
 .logobefore {
-	background-image: url("../img/logo-01.svg");
+	background-image: url("../img/logo-01.png");
 	background-repeat: no-repeat;
+	background-size: contain;
 	width: 180px;
 	height: 60px;
 }
 
 .logoafter {
-	background-image: url("../img/logo.svg") !important;
+	background-image: url("../img/logo.png") !important;
 }
 
 @media(max-width: 600px) {

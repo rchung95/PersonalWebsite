@@ -51,3 +51,4 @@ Changelog 2.5
 Changeling 2.6 [current]
 - Added in another project
 - Updated my resume
+- Changed all .svg in use to .png as Firefox makes everything too crisp
